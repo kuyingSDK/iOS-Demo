@@ -1,50 +1,29 @@
-# Kuying SDK iOS Demo
+# iOS_Demo
 
-## Introduction
-This is an iOS demo project that demonstrates how to integrate and use the Kuying SDK for iOS applications.
+Demo使用说明：
+如您需要使用自己的配置，请调整一下内容：
+ 
+1.AdParams.h
 
-## Features
-- **Rewarded Video Ads**
-- **Interstitial Ads**
-- **Splash Ads**
-- **Banner Ads**
-- **Native Ads**
+替换AppKey+AppId和广告位ID为您自己在后台的配置值
 
-## Installation
+======================================================================
 
-### Prerequisites
-- iOS 13.0 or later
-- Xcode 16.0 or later
-- CocoaPods
+## 集成文档
 
-### Setup
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/kuyingSDK/iOS-Demo.git
-   cd iOS-Demo
-   ```
+https://help.takuad.com/docs/aYc134y6
 
-2. Install dependencies:
-   ```bash
-   pod install
-   ```
-   or
-   ```bash
-   pod install --repo-update
-   ```
+======================================================================
 
-3. Open the workspace:
-   ```bash
-   open SmartdigimktSDKDemo.xcworkspace
-   ```
+Demo Usage Instructions:
+If you need to use your own configurations, please modify the following:
 
-## Quick Start
-1. Open the demo project in Xcode
-2. Run the project to see the SDK integration examples
-3. Check the source code to understand how to integrate the SDK
+1.AdParams.h
 
-## Documentation
-For detailed integration guide, please refer to:
-- [Kuying SDK iOS Integration Guide](https://help.takuad.com/docs/aYc134y6)
+Replace the AppKey+AppId and placement ID with your own config.
 
+======================================================================
 
+## Integration Instructions
+
+https://help.takuad.com/docs/aYc134y6
