@@ -12,6 +12,8 @@
 @interface SplashVC () <SDMPubSplashDelegate, SDMPubSplashLoadingDelegate>
 
 @property (strong, nonatomic) SDMSplashAd * splashAd;
+
+@property (strong, nonatomic) UIView * bottomLogoView;
  
 @end
  
@@ -38,7 +40,8 @@
 #pragma mark - Show Ad
 - (void)showAd {
     //设置底部logo view
-    self.splashAd.containerView = [self footLogoView];
+    self.bottomLogoView = [self footLogoView];
+    self.splashAd.containerView = self.bottomLogoView;
     
     self.splashAd.window = [UIApplication sharedApplication].keyWindow;
     self.splashAd.showViewController = self.tabBarController;
@@ -61,15 +64,16 @@
     //添加图片
     UIImageView * logoImageView = [UIImageView new];
     logoImageView.image = [UIImage imageNamed:@"logo"];
-    logoImageView.contentMode = UIViewContentModeCenter;
-    logoImageView.frame = footerCtrView.frame;
+    logoImageView.contentMode = UIViewContentModeScaleAspectFill;
+    logoImageView.frame = CGRectMake(0, 0, 40, 40);
+    logoImageView.center = footerCtrView.center;
     [footerCtrView addSubview:logoImageView];
     
     //添加点击事件
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(footerImgClick:)];
     logoImageView.userInteractionEnabled = YES;
     [logoImageView addGestureRecognizer:tap];
-     
+      
     return footerCtrView;
 }
  
