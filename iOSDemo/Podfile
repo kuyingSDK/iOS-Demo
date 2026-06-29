@@ -17,7 +17,7 @@ target 'iOSDemo' do
   use_frameworks!
   
   #酷盈 SDK
-  pod 'SmartdigimktCNSDK','6.5.42'
+  pod 'SmartdigimktCNSDK','6.5.66'
  
   #Demo UI依赖的第三库
   pod 'Masonry'
