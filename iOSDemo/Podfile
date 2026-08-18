@@ -1,5 +1,5 @@
 #建议使用github源，pod install前请检查终端代理网络是否通畅(可能需要通过代码给终端设置代理，否则终端不会走代理服务，具体请检查您的代理服务流量变化)，如遇失败可尝试使用pod install --repo-update命令
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 platform :ios, '13.0'
 
@@ -17,7 +17,7 @@ target 'iOSDemo' do
   use_frameworks!
   
   #酷盈 SDK
-  pod 'SmartdigimktCNSDK','6.5.66'
+  pod 'SmartdigimktCNSDK','6.5.77'
  
   #Demo UI依赖的第三库
   pod 'Masonry'

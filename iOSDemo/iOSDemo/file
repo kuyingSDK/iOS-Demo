@@ -167,5 +167,41 @@
         "zh-Hans": "温馨提示",
         "en": "Tips"
     },
+    "Icon广告": {
+        "zh-Hans": "Icon广告",
+        "en": "Icon Ad"
+    },
+    "原生自渲染包装成浮动或锚定 Icon": {
+        "zh-Hans": "原生自渲染包装成浮动或锚定 Icon",
+        "en": "Native self-render wrapped as a floating or anchored Icon"
+    },
+    "浮动可拖拽": {
+        "zh-Hans": "浮动可拖拽",
+        "en": "FLOAT"
+    },
+    "固定在容器": {
+        "zh-Hans": "固定在容器",
+        "en": "ANCHOR"
+    },
+    "圆形": {
+        "zh-Hans": "圆形",
+        "en": "ROUND"
+    },
+    "圆角方": {
+        "zh-Hans": "圆角方",
+        "en": "ROUNDED_SQUARE"
+    },
+    "容器（固定模式）": {
+        "zh-Hans": "容器（固定模式）",
+        "en": "Container (ANCHOR)"
+    },
+    "Is Ready": {
+        "zh-Hans": "Is Ready",
+        "en": "Is Ready"
+    },
+    "Destroy": {
+        "zh-Hans": "Destroy",
+        "en": "Destroy"
+    },
 }
  

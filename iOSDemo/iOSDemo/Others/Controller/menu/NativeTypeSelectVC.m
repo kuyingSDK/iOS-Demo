@@ -8,6 +8,7 @@
 #import "NativeTypeSelectVC.h"
 #import "NativeSelfRenderVC.h"
 #import "NativeExpressVC.h"
+#import "IconAdVC.h"
  
 
 @interface NativeTypeSelectVC () <UITableViewDelegate,UITableViewDataSource>
@@ -55,6 +56,10 @@
         NativeExpressVC *vc = [[NativeExpressVC alloc] init];
         vc.title = kLocalizeStr(@"模板广告");
         [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 2) {
+        IconAdVC *vc = [[IconAdVC alloc] init];
+        vc.title = kLocalizeStr(@"Icon广告");
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
   
@@ -67,6 +72,7 @@
     self.dataSource = @[
         @{@"title": kLocalizeStr(@"自渲染广告"), @"subtitle": kLocalizeStr(@"演示基础的单个自渲染广告")},
         @{@"title": kLocalizeStr(@"模板广告"), @"subtitle": kLocalizeStr(@"演示基础的单个模板广告")},
+        @{@"title": kLocalizeStr(@"Icon广告"), @"subtitle": kLocalizeStr(@"原生自渲染包装成浮动或锚定 Icon")},
     ];
     
     self.tableView.dataSource = self;

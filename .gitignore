@@ -4,3 +4,5 @@
 */iOSDemo.xcworkspace
 */build
 *.sh 
+/iOSDemo/.cocoapods
+iOSDemo/iOSDemo.xcodeproj/project.xcworkspace/xcuserdata/taku-0093.xcuserdatad/UserInterfaceState.xcuserstate
