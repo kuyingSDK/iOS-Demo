@@ -279,7 +279,6 @@ static NSString * const kIconAdErrorDomain = @"com.smartdigimkt.ads.icon";
         self.iconView.closeCallback = ^{
             [weakSelf close];
         };
-        [self.iconView attachToHost:host config:req.config];
         NSString *url = self.nativeAd.nativeAdOffer.iconUrl;
         if (url.length == 0) {
             url = self.nativeAd.nativeAdOffer.imageUrl;
@@ -301,6 +300,7 @@ static NSString * const kIconAdErrorDomain = @"com.smartdigimkt.ads.icon";
                           prepareInfo:prepareInfo
                           configParam:layoutParams
                             closeView:self.iconView.closeView];
+        [self.iconView attachToHost:host config:req.config];
         [self.nativeAd resumeVideo];
         self.registered = YES;
         NSString *mode = (req.config.displayMode == IconAdDisplayModeFLOAT) ? @"FLOAT" : @"ANCHOR";

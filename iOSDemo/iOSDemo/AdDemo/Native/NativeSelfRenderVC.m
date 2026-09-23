@@ -65,11 +65,6 @@
     _nativeAdView.layer.cornerRadius = 8;
     _nativeAdView.clipsToBounds = YES;
     
-    // 添加到容器
-    [_adContainerView addSubview:_nativeAdView];
-    [_nativeAdView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.adContainerView);
-    }];
     
     // 获取媒体视图
     UIView *mediaView = [_nativeAd getMediaViewWithDelegate:self];
@@ -131,6 +126,12 @@
                  prepareInfo:prepareInfo 
                  configParam:layoutParams 
                    closeView:_nativeAdView.dislikeButton];
+    
+    // 添加到容器
+    [_adContainerView addSubview:_nativeAdView];
+    [_nativeAdView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.adContainerView);
+    }];
 }
  
 - (void)cleanUpAd {
